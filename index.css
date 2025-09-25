@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(214, 231, 236);
+  /* font-size: 1em; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.25em;
+  background-color: rgb(64, 145, 170);
+}
+
+nav > menu,
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  /* gap: 2em; */
+  font-size: 1em;
+  color: aliceblue;
+}
+
+nav > menu > li,
+nav > ul > li {
+  border-right: 1px solid black;
+  padding: 0.25em;
+}
+
+nav > menu > li:last-child,
+nav > ul > li:last-child {
+  border-right: none;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+header section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2ch;
+  padding: 1em;
+}
+
+form {
+  display: flex;
+  /* flex-direction: row; */
+  flex: 1;
+}
+
+input {
+  flex: 1;
+  /* flex-grow: 1; */
+}
+
+h1 {
+  font-size: 2em;
+}
+
+form > button {
+  background-color: rgb(64, 145, 170);
+}
+
+main {
+  display: flex;
+  /* grid-template-columns: 1fr 5fr;
+  list-style: none; */
+}
+
+main > section > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-auto-rows: 25rem;
+  gap: 0.5rem;
+  /* grid-template-rows: auto; */
+}
+
+aside nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25 rem;
+  min-width: 25ch;
+  padding: 0.25rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+}
+
+footer > section {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
